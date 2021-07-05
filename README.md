@@ -7,6 +7,9 @@ Generalized Shape Expansion (GSE) is a sampling based motion planning algorithm.
 ## Dependancies
 The project is based upon the *Open Motion Planning Library* (OMPL). OMPL is a fast and light weight library that consists of various state of the art sampling-based motion planning algorithms. It contains various tools that help expedite the development of motion planning algorithms
 
+## Code
+To be able to run our code, please these add these files in a folder under ompl/src/ompl/geometric/planners/ . Install the OMPL and its dependancies by visiting https://github.com/ompl/ompl
+
 ## Citation
 
 In case you use this work as an academic context, please cite as the following.
@@ -26,7 +29,7 @@ In case you use this work as an academic context, please cite as the following.
 
 ## References
 
-[1] Vrushabh V Zinage and Satadal Ghosh. Generalized shape expansion-based motion planning for uavs in three dimensional obstacle-cluttered environment. In AIAA Scitech 2020 Forum, page 0860, 2020
+[1] Vrushabh V Zinage and Satadal Ghosh. Generalized shape expansion-based motion planning in three dimensional obstacle-cluttered environment. In AIAA Scitech 2020 Forum, page 0860, 2020
 
 ## License
 
