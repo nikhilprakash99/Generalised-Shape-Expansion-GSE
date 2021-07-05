@@ -2,7 +2,7 @@
 
 ## Overview
 
-Generalized Shape Expansion (GSE) is a sampling based motion planning algorithm. Instead of performing collision checks to draw an edge between two vertices, our approach uses the information about the obstacles to compute a free space (termed as generalized shape) about the sampled point. This free space is then used to connect vertices. The connection with the vertices is not restricted to a fixed or decreasing connection radius as in case of other well established sampling based motion planning algorithms, thereby allowing us to generate feasible paths faster. Consequently, the number of iterations and edges are fewer compared to other algorithms.
+Generalized Shape Expansion (GSE) is a sampling-based motion planning algorithm. Instead of performing collision checks to draw an edge between two vertices, our approach uses the information about the obstacles to compute a free space (termed as generalized shape) about the sampled point. This free space is then used to connect vertices. The connection with the vertices is not restricted to a fixed or decreasing connection radius as in case of other well established sampling based motion planning algorithms, thereby allowing us to generate feasible paths faster. Consequently, the number of iterations and edges to generate a feasible path are fewer compared to other algorithms.
 
 ## Dependancies
 The project is based upon the *Open Motion Planning Library* (OMPL). OMPL is a fast and light weight library that consists of various state of the art sampling-based motion planning algorithms. It contains various tools that help expedite the development of motion planning algorithms
