@@ -27,6 +27,15 @@ In case you use this work as an academic context, please cite as the following.
   year={2020},
   publisher={American Institute of Aeronautics and Astronautics}
 }
+
+@inproceedings{zinage2019efficient,
+  title={An efficient motion planning algorithm for uavs in obstacle-cluttered environment},
+  author={Zinage, Vrushabh and Ghosh, Satadal},
+  booktitle={2019 American Control Conference (ACC)},
+  pages={2271--2276},
+  year={2019},
+  organization={IEEE}
+}
 ```
 
 
