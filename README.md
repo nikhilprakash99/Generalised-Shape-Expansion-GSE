@@ -42,6 +42,7 @@ In case you use this work as an academic context, please cite as the following.
 ## References
 
 [1] Vrushabh.  V.  Zinage  and  S.  Ghosh,  “Generalized  shape  expansion-basedmotion planning in three-dimensional obstacle-cluttered environment,” Journal of Guidance, Control and Dynamics, vol. 43, no. 9, pp. 1781–1791, 2020
+
 [2] V. Zinage and S. Ghosh, “An efficient motion planning algorithm foruavs  in  obstacle-cluttered  environment,”  in2019 American ControlConf. (ACC). IEEE, 2019, pp. 2271–2276
 
 ## License
