@@ -10,7 +10,7 @@ The project is based upon the *Open Motion Planning Library* (OMPL). OMPL is a f
 ## Code
 To be able to run our code, please these add these files in a folder under ompl/src/ompl/geometric/planners/ . Install the OMPL folder and its dependancies by visiting https://github.com/ompl/ompl
 
-## Comparison plot
+## Comparison with other algorithms
 We treat individual obstacles as mesh models or point cloud for all algorithms. For other algorithms under comparison, the Flexible Collision Library (FCL) library is used to perform collision checks.
 
 ## Citation
