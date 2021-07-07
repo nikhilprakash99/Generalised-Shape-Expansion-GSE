@@ -13,6 +13,9 @@ To be able to run our code, please these add these files in a folder under ompl/
 ## Comparison with other algorithms
 We treat individual obstacles as mesh models or point cloud for all algorithms. For other algorithms under comparison, the Flexible Collision Library (FCL) library (https://github.com/flexible-collision-library/fcl) is used to perform collision checks. A sample comparison plot is shown in the following figure.
 
+## Using GSE with point cloud data
+In real world applications, where the environment is usually represented as point cloud data, the Point Cloud Library (PCL) (https://pointclouds.org/) can be used to segment the environment into spatially distinct obstacles. In particular, the pcl_segmentation library (https://pointclouds.org/documentation/group__segmentation.html) can perform this task efficiently. Even in unknown 3D environments where we have local information about the obstacles in the form of point cloud data, GSE can be used to generate feasible paths as detailed in https://arxiv.org/abs/2005.13229 .
+
 ## Citation
 
 In case you use this work as an academic context, please cite as the following.
