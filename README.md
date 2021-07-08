@@ -4,14 +4,42 @@
 
 Generalized Shape Expansion (GSE) is a sampling-based motion planning algorithm. Instead of performing collision checks to draw an edge between two vertices, our approach uses the information about the obstacles to compute a free space (termed as generalized shape) about the sampled point. This free space is then used to connect vertices. The connection with the vertices is not restricted to a fixed or decreasing connection radius as in case of other well established sampling based motion planning algorithms, thereby allowing us to generate feasible paths faster. Consequently, the number of iterations and edges to generate a feasible path are fewer compared to other algorithms.
 
+![Sample path planned using the GSE algorithm](./docs/images/SampleOutput.png)
+
 ## Dependancies
 The project is based upon the *Open Motion Planning Library* (OMPL). OMPL is a fast and light weight library that consists of various state of the art sampling-based motion planning algorithms. It contains various tools that help expedite the development of motion planning algorithms
 
 ## Installation
 To be able to run our code, please these add these files in a folder under ompl/src/ompl/geometric/planners/ . Install the OMPL folder and its dependancies by visiting https://github.com/ompl/ompl or follow the installation instructions provided in https://ompl.kavrakilab.org/installation.html .
 
+```shell
+# Clone the central OMPL Repository
+git clone https://github.com/ompl/ompl.git
+
+# Clone the GSE repository
+git clone git@github.com:nikhilprakash99/Generalised-Shape-Expansion-GSE.git GSE
+
+# Copy source files to the OMPL repository
+cp -R GSE/GSE ompl/src/ompl/geometric/planners     
+
+# configure cmake
+mkdir -p ompl/build/Release
+cd ompl/build/Release
+cmake ../..
+
+# next step is optional, run if you want Python bindings for OMPL
+make -j 4 update_bindings 
+
+# replace "4" with the number of cores on your machine
+make -j 4
+```
+
+Sample code on how to use the use the GSE algorithm for rigid body planning can be found [here](demos/RigidBodyPlanning.cpp)
+
 ## Comparison with other algorithms
-We treat individual obstacles as mesh models or point cloud for all algorithms. For other algorithms under comparison, the Flexible Collision Library (FCL) library (https://github.com/flexible-collision-library/fcl) is used to perform collision checks. A sample comparison plot is shown in the following figure.
+We treat individual obstacles as mesh models or point cloud for all algorithms. For other algorithms under comparison, the Flexible Collision Library (FCL) library (https://github.com/flexible-collision-library/fcl) is used to perform collision checks. A sample comparison plot is shown in the following figure. Refernce code for benchmarking can be found [here](demos/Benchmark.cpp)
+
+![Algorithm Benchmarks](./docs/images/benchmark.png)
 
 ## Using GSE with point cloud data
 In real world applications, where the environment is usually represented as point cloud data (LiDAR sensor), the Point Cloud Library (PCL) (https://pointclouds.org/) can be used to segment the environment into spatially distinct obstacles. In particular, the pcl_segmentation library  can perform this task efficiently. Thereafter, the point cloud data for individual obstacles can be added in the GSE algorithm ('addObstacle' function). Readily available segmented point cloud dataset for some environments can be downloaded from https://projects.asl.ethz.ch/datasets/doku.php?id=home in CSV format .
