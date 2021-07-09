@@ -37,7 +37,7 @@ make -j 4
 Sample code on how to use the use the GSE algorithm for rigid body planning can be found [here](demos/RigidBodyPlanning.cpp)
 
 ## Comparison with other algorithms
-We treat individual obstacles as mesh models or point cloud for all algorithms. For other algorithms under comparison, the Flexible Collision Library (FCL) library (https://github.com/flexible-collision-library/fcl) is used to perform collision checks. A sample comparison plot is shown in the following figure. Refernce code for benchmarking can be found [here](demos/Benchmark.cpp)
+We treat individual obstacles as mesh models or point cloud for all algorithms. For other algorithms under comparison, the Flexible Collision Library (FCL) library (https://github.com/flexible-collision-library/fcl) is used to perform collision checks. A sample comparison plot is shown in the following figure. Reference code for benchmarking can be found [here](demos/Benchmark.cpp)
 
 ![](./docs/images/benchmark.png)
 
