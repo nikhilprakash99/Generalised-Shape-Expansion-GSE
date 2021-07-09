@@ -10,7 +10,7 @@ Generalized Shape Expansion (GSE) is a sampling-based motion planning algorithm.
 The project is based upon the *Open Motion Planning Library* (OMPL). OMPL is a fast and light weight library that consists of various state of the art sampling-based motion planning algorithms. It contains various tools that help expedite the development of motion planning algorithms
 
 ## Installation
-To be able to run our code, Add the source files in a folder under ompl/src/ompl/geometric/planners/ . Install the OMPL folder and its dependancies by visiting https://github.com/ompl/ompl or follow the installation instructions provided in https://ompl.kavrakilab.org/installation.html.
+To be able to run our code, Add the source files in a folder under ompl/src/ompl/geometric/planners/ . Install the OMPL folder and its dependancies by visiting https://github.com/ompl/ompl or follow the installation instructions provided in https://ompl.kavrakilab.org/installation.html. Another alternative is to run the following commands in order.
 
 ```shell
 # Clone the central OMPL Repository
