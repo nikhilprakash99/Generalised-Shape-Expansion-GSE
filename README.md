@@ -44,7 +44,7 @@ We treat individual obstacles as mesh models or point cloud for all algorithms. 
 ## Using GSE with point cloud data
 In real world applications, where the environment is usually represented as point cloud data (LiDAR sensor), the Point Cloud Library (PCL) (https://pointclouds.org/) can be used to segment the environment into spatially distinct obstacles. In particular, the pcl_segmentation library  can perform this task efficiently. Thereafter, the point cloud data for individual obstacles can be added in the GSE algorithm ('addObstacle' function). Readily available segmented point cloud dataset for some environments can be downloaded from https://projects.asl.ethz.ch/datasets/doku.php?id=home in CSV format. Note that when using point cloud map it must be ensured that the points are sampled in the free space.
 
-## GSE in unknown 3D environments (3D-OGSE)
+## Real time GSE in unknown static 3D environments (3D-OGSE)
 In unknown 3D environments, where the agent has local information about the obstacles in the form of point cloud data (LiDAR sensor), GSE can be used to generate feasible paths from the current position of the agent to the goal location. Once the agent reaches the boundary of the 'sensing shape' (intersection of generalized shape about the current position and the sensing region), the agent again triggers a replan taking again into account its local information. Initiaing a replan only when the agent reaches the boundary of the sensing shape (guaranteed to be a safe region) allows the agent to replan only when neccessary. Consequently, it saves computational load for the onboard sensors. Details of this approach can be found in https://arxiv.org/abs/2005.13229 .
 
 ## Citation
